@@ -64,19 +64,19 @@ li {
     height: 80px;
     border-radius: 500px;
     border: 2px solid teal;
+    transition: transform 2s;
     /* box-shadow: 0 0 4px 2px grey; */
     /* animation: circle1 5s linear infinite; */
-    transition: width 2s, height 2s;
     /* transform-origin: 50% 150px;
     transform: rotate(180deg); */
 }
 
-#cirlce1:hover {
-    width: 100px;
-    height: 100px;
+
+/* #circle1:hover {
     transform-origin: 50% 150px;
     transform: rotate(180deg);
-}
+    transform: rotate(180deg);
+} */
 
 #circle2 {
     width: 80px;

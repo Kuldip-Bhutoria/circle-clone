@@ -1,0 +1,22 @@
+{
+  "name": "pause_together",
+  "version": "1.0.0",
+  "description": "pause app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kuldip-Bhutoria/circle-clone.git"
+  },
+  "author": "Kuldip Bhutoria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kuldip-Bhutoria/circle-clone/issues"
+  },
+  "homepage": "https://github.com/Kuldip-Bhutoria/circle-clone#readme",
+  "dependencies": {
+    "realm": "^3.6.5"
+  }
+}
