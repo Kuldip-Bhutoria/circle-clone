@@ -1,0 +1,109 @@
+body {
+    font-family: helvetica;
+}
+
+ul {
+    font-family: monospace;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+#date {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#mobile1 {
+    width: 350px;
+    height: 620px;
+    float: left;
+    margin-top: 50px;
+    margin-right: 20px;
+    border: 1.5px solid black;
+    border-radius: 25px;
+    background: linear-gradient(#ffffff, rgb(234, 248, 255));
+}
+
+#mobile2 {
+    width: 350px;
+    height: 620px;
+    float: right;
+    margin-top: 50px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 20px
+}
+
+@keyframes circle1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes circle2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+#circle1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 500px;
+    border: 2px solid teal;
+    /* box-shadow: 0 0 4px 2px grey; */
+    /* animation: circle1 5s linear infinite; */
+    transition: width 2s, height 2s;
+    /* transform-origin: 50% 150px;
+    transform: rotate(180deg); */
+}
+
+#cirlce1:hover {
+    width: 100px;
+    height: 100px;
+    transform-origin: 50% 150px;
+    transform: rotate(180deg);
+}
+
+#circle2 {
+    width: 80px;
+    height: 80px;
+    border: 2px dotted grey;
+    border-radius: 500px;
+    /* box-shadow: 0 0 4px 2px grey; */
+    animation: circle2 5s linear infinite;
+    transform-origin: 50% 150px;
+}
+
+#circle12 {
+    width: 80px;
+    height: 80px;
+    border-radius: 500px;
+    border: 2px solid teal;
+    /* box-shadow: 0 0 4px 2px grey; */
+    animation: circle2 5s linear infinite;
+    transform-origin: 50% 150px;
+}
+
+#circle22 {
+    width: 80px;
+    height: 80px;
+    border: 2px dotted grey;
+    border-radius: 500px;
+    /* box-shadow: 0 0 4px 2px grey; */
+    animation: circle1 5s linear infinite;
+    transform-origin: 50% 150px;
+}
