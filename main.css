@@ -64,7 +64,6 @@ li {
     height: 80px;
     border-radius: 500px;
     border: 2px solid teal;
-    transition: transform 2s;
     /* box-shadow: 0 0 4px 2px grey; */
     /* animation: circle1 5s linear infinite; */
     /* transform-origin: 50% 150px;
@@ -83,9 +82,7 @@ li {
     height: 80px;
     border: 2px dotted grey;
     border-radius: 500px;
-    /* box-shadow: 0 0 4px 2px grey; */
-    animation: circle2 5s linear infinite;
-    transform-origin: 50% 150px;
+    /* transform-origin: 50% 150px; */
 }
 
 #circle12 {
@@ -94,7 +91,6 @@ li {
     border-radius: 500px;
     border: 2px solid teal;
     /* box-shadow: 0 0 4px 2px grey; */
-    animation: circle2 5s linear infinite;
     transform-origin: 50% 150px;
 }
 
@@ -104,6 +100,5 @@ li {
     border: 2px dotted grey;
     border-radius: 500px;
     /* box-shadow: 0 0 4px 2px grey; */
-    animation: circle1 5s linear infinite;
     transform-origin: 50% 150px;
 }

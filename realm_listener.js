@@ -13,25 +13,18 @@ async function main() {
     Realm.open({
         sync: {
             user: adminUser,
-            url: `${constants.realmUrl}/test`,
+            url: `${constants.realmUrl}/pause`,
             fullSynchronization: true,
             error: errorCallback,
         }
     }).then(realm => {
         console.log('listening...')
         let results = realm.objects('latency')
-
-        var i = 0;
-        var avg = 0;
-
         results.addListener((objects, changes) => {
             changes.insertions.forEach((index) => {
-                let insertedTimestamp = objects[index].timestamps;
-                var latency = Date.now() - insertedTimestamp;
-                i++;
-                console.log(`the latency of receiving data is: `, latency, `ms`);
-                avg = (avg * (i - 1) + (latency)) / (i);
-                console.log('the average latency is: ', Math.floor(avg), `ms`);
+                let xpos = objects[index].positionx;
+                let ypos = objects[index].positiony;
+                console.log(xpos + ',' + ypos);
             });
 
 
