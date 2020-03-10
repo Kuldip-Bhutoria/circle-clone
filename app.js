@@ -3,8 +3,8 @@ $(function() {
         containment: "parent",
         drag: function() {
             var offset = $(this).position();
-            var xpos = offset.left
-            var ypos = offset.top
+            var xpos = offset.left - $("#mobile1").offset().left;
+            var ypos = offset.top - $("#mobile1").offset().top;
             var data = JSON.stringify({
                 xpos: xpos,
                 ypos: ypos
