@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Kuldip-Bhutoria/circle-clone#readme",
   "dependencies": {
-    "realm": "^3.6.5"
+    "realm": "^11.8.0"
   }
 }
